@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Planetary Pioneering</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="carousel">
+		
+		<img alt="Slide3" src="img/Slide3.jpg">
+		<img alt="Slide2" src="img/Slide2.jpg">
+		<img alt="Slide1" src="img/Slide1.jpg">
+		<!-- <div class="slide-photo active">
+			<img alt="abs_eut_launch_lightning_tower" src="img/abs_eut_launch_lightning_tower.jpg">
+		</div>
+		<div class="slide-photo inactive">
+			<img alt="abs_eut_pad" src="img/abs_eut_pad.jpg">
+		</div>
+		<div class="slide-photo inactive">
+			<img alt="abs_eutelsat_launch_streak" src="img/abs_eutelsat_launch_streak.jpg">
+		</div> -->
+	</div>
+	<div class="cover" id="type"><img src="img/Type.png"></div>
+	<!-- <div id="about-placeholder"></div> -->
+	<div class="cover" id="popover">
+		<div id="about-box"><h1>Andy is a Moon rover being built in a lab at Carnegie Mellon University. Its two week mission is to explore a pit in the Lacus Mortis region on the Moon. Andy is also a competitor in the Google Lunar XPrize competition.</h1></div>
+	</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+$(function() {
+
+	$("#popover").click(function() {
+		console.log('hi')
+		if ($("#popover").css('opacity') == 0) {
+			// $("#popover").css('opacity','0.7');
+			$("#popover").animate({'opacity':0.8}, 1200);
+		} else {
+			$("#popover").animate({'opacity':0}, 1000);
+		}
+	})
+});
+</script>
+</body>
+</html>
